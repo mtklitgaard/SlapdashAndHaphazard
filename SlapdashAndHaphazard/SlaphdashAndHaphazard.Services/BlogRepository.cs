@@ -17,7 +17,12 @@ namespace SlaphdashAndHaphazard.Services
 
         public IList<Post> Posts(int pageNo, int pageSize)
         {
-            throw new System.NotImplementedException();
+            var posts = _slapdashAndHaphazardContext
+                            .Posts
+                            .Where(x => x.Published)
+                            .OrderByDescending(x => x.PostedOn);
+
+            return posts.ToList();
         }
 
         public int TotalPosts()
