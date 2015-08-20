@@ -4,10 +4,11 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SlapdashAndHaphazard.Domain.Interfaces;
 
 namespace SlapdashAndHaphazard.Domain
 {
-    public class SlapdashAndHaphazardContext: DbContext
+    public class SlapdashAndHaphazardContext : DbContext, ISlapdashAndHaphazardContext
     {
         public SlapdashAndHaphazardContext() : base("SlapdashAndHaphazard")
         {

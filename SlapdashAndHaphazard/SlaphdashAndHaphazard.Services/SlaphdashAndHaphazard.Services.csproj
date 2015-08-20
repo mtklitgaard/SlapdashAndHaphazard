@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFD529A4-6166-4FAB-843D-B7DD62C93BD9}</ProjectGuid>
+    <ProjectGuid>{715838F1-D95C-4237-AAF0-6A3249814F29}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SlapdashAndHaphazard.Domain</RootNamespace>
-    <AssemblyName>SlapdashAndHaphazard.Domain</AssemblyName>
+    <RootNamespace>SlaphdashAndHaphazard.Services</RootNamespace>
+    <AssemblyName>SlaphdashAndHaphazard.Services</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -49,26 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs" />
-    <Compile Include="Interfaces\ISlapdashAndHaphazardContext.cs" />
-    <Compile Include="Migrations\201508190502412_Initial.cs" />
-    <Compile Include="Migrations\201508190502412_Initial.Designer.cs">
-      <DependentUpon>201508190502412_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Post.cs" />
-    <Compile Include="SlapdashAndHaphazardContext.cs" />
+    <Compile Include="BlogRepository.cs" />
+    <Compile Include="Interfaces\IBlogRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tag.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SlapdashAndHaphazard.Domain\SlapdashAndHaphazard.Domain.csproj">
+      <Project>{BFD529A4-6166-4FAB-843D-B7DD62C93BD9}</Project>
+      <Name>SlapdashAndHaphazard.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201508190502412_Initial.resx">
-      <DependentUpon>201508190502412_Initial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

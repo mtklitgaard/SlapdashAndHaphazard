@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlapdashAndHaphazard.Domain", "SlapdashAndHaphazard.Domain\SlapdashAndHaphazard.Domain.csproj", "{BFD529A4-6166-4FAB-843D-B7DD62C93BD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlaphdashAndHaphazard.Services", "SlaphdashAndHaphazard.Services\SlaphdashAndHaphazard.Services.csproj", "{715838F1-D95C-4237-AAF0-6A3249814F29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlapdashAndHaphazard.Services.Tests", "SlapdashAndHaphazard.Services.Tests\SlapdashAndHaphazard.Services.Tests.csproj", "{4ECABEC5-7F8F-4BE0-B6D1-8C189AFC4543}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{BFD529A4-6166-4FAB-843D-B7DD62C93BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFD529A4-6166-4FAB-843D-B7DD62C93BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFD529A4-6166-4FAB-843D-B7DD62C93BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715838F1-D95C-4237-AAF0-6A3249814F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715838F1-D95C-4237-AAF0-6A3249814F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715838F1-D95C-4237-AAF0-6A3249814F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715838F1-D95C-4237-AAF0-6A3249814F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECABEC5-7F8F-4BE0-B6D1-8C189AFC4543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECABEC5-7F8F-4BE0-B6D1-8C189AFC4543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECABEC5-7F8F-4BE0-B6D1-8C189AFC4543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECABEC5-7F8F-4BE0-B6D1-8C189AFC4543}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
