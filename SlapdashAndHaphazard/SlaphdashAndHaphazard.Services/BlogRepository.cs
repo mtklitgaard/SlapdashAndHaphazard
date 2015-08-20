@@ -20,7 +20,9 @@ namespace SlaphdashAndHaphazard.Services
             var posts = _slapdashAndHaphazardContext
                             .Posts
                             .Where(x => x.Published)
-                            .OrderByDescending(x => x.PostedOn);
+                            .OrderByDescending(x => x.PostedOn)
+                            .Skip(pageNo*pageSize)
+                            .Take(pageSize);
 
             return posts.ToList();
         }
