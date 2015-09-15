@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using SlapdashAndHaphazard.App_Start;
 
 namespace SlapdashAndHaphazard
 {
@@ -13,6 +14,8 @@ namespace SlapdashAndHaphazard
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            
+            UnityWebActivator.Start();
         }
     }
 }
